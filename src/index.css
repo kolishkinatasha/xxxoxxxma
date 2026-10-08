@@ -1,0 +1,53 @@
+:root {
+  --yellow: #ffd600;
+  --black: #0d0d0d;
+  --white: #fff;
+  --blue: #0000ff;
+  --lime: #b8ff00;
+  --red: #ff2b1c;
+  --orange: #ff8a00;
+  --font-display: 'Russo One', 'Arial Black', sans-serif;
+  --font-mono: 'Rubik Mono One', 'Arial Black', sans-serif;
+  --font-body: 'Unbounded', system-ui, sans-serif;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--yellow);
+  color: var(--black);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
